@@ -8,26 +8,42 @@
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
-      /* CSS cho thanh Menu */
-      .nav-menu { background: rgba(0,0,0,0.1); padding: 10px 0; text-align: center; }
-      .nav-menu a { color: white; text-decoration: none; padding: 10px 20px; font-weight: bold; margin: 0 5px; border-radius: 5px; }
-      .nav-menu a:hover { background: rgba(255,255,255,0.2); }
+      /* CSS cho thanh Menu nằm ở dưới */
+      .nav-menu { 
+        margin-top: 25px;
+        padding: 12px 0; 
+        text-align: center; 
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+      }
+      .nav-menu a { 
+        color: white; 
+        text-decoration: none; 
+        padding: 8px 18px; 
+        font-weight: bold; 
+        margin: 0 4px; 
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+      .nav-menu a:hover { 
+        background: rgba(255, 255, 255, 0.25); 
+      }
     </style>
   </head>
   <body>
     <section class="page-header">
-      <!-- Đây là thanh Menu chúng ta thêm vào -->
-    <div class="nav-menu">
-      <a href="{{ '/' | relative_url }}">Trang chủ</a>
-      <a href="{{ '/gioi-thieu.html' | relative_url }}">Giới thiệu</a>
-      <a href="{{ '/lien-he.html' | relative_url }}">Liên hệ</a>
-    </div>
-      
+      <!-- 1. Tên trang web -->
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      
+      <!-- 2. Slogan / Mô tả -->
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
+      
+      <!-- 3. Thanh Menu nằm bên dưới -->
+      <div class="nav-menu">
+        <a href="{{ '/' | relative_url }}">Trang chủ</a>
+        <a href="{{ '/gioi-thieu.html' | relative_url }}">Giới thiệu</a>
+        <a href="{{ '/lien-he.html' | relative_url }}">Liên hệ</a>
+      </div>
     </section>
 
     <section class="main-content">
