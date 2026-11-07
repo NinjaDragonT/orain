@@ -1,6 +1,6 @@
 # 📚 Sổ Tay Thuật Toán
 
-Tổng hợp các bài toán và giải thuật lập trình thi đấu mà tôi đã tìm hiểu và cài đặt.
+Tổng hợp các thuật toán mà tôi đã tìm hiểu và cài đặt.
 
 <div class="card-grid">
   
