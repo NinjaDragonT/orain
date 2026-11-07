@@ -1,11 +1,6 @@
 ## Danh sách bài viết
 - [Thuật toán kiểm tra số nguyên tố](/post/snt.html)
 
----
-layout: default
-title: Danh sách bài viết
----
-
 # 📚 Sổ Tay Thuật Toán
 
 Tổng hợp các bài toán và giải thuật lập trình thi đấu mà tôi đã tìm hiểu và cài đặt.
