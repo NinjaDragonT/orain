@@ -97,6 +97,24 @@
   background: #0f5858;
 }
 
+/* Nút quay lại trang danh sách */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #157878;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #157878;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #157878;
+  color: white !important;
+}
+
 /* Thu gọn chiều cao vùng màu xanh (Header) */
 .page-header {
   padding: 1.5rem 2rem !important; /* Giảm khoảng trống trên và dưới */
