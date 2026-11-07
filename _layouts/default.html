@@ -16,11 +16,11 @@
   <body>
     <section class="page-header">
       <!-- Đây là thanh Menu chúng ta thêm vào -->
-      <div class="nav-menu">
-        <a href="/">Trang chủ</a>
-        <a href="/gioi-thieu">Giới thiệu</a>
-        <a href="/lien-he">Liên hệ</a>
-      </div>
+    <div class="nav-menu">
+      <a href="{{ '/' | relative_url }}">Trang chủ</a>
+      <a href="{{ '/gioi-thieu.html' | relative_url }}">Giới thiệu</a>
+      <a href="{{ '/lien-he.html' | relative_url }}">Liên hệ</a>
+    </div>
       
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
