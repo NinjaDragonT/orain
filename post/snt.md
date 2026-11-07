@@ -1,6 +1,6 @@
 ---
 ---
-<a href="{{ '/post/baiviet.html' | relative_url }}" class="back-btn">← Quay lại </a>
+<a href="baiviet.html" class="back-btn">← Quay lại </a>
 
 Code C++: 
 ```cpp
