@@ -9,7 +9,7 @@ Tổng hợp các bài toán và giải thuật lập trình thi đấu mà tôi
     <span class="card-tag">Số học</span>
     <h3>Kiểm tra Số nguyên tố</h3>
     <p>Thuật toán tối ưu kiểm tra một số nguyên $N$ có phải là số nguyên tố hay không với độ phức tạp $O(\sqrt{N})$.</p>
-    <a href="/post/snt.html" class="card-btn">Đọc bài viết →</a>
+    <a href="snt.html" class="card-btn">Đọc bài viết →</a>
   </div>
 
   <!-- Thẻ bài viết 2 -->
