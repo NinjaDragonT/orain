@@ -1,4 +1,4 @@
-
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 # Thuật toán Dijkstra
 
 **Độ phức tạp:** $O(V + E \log V)$ nếu dùng Hàng đợi ưu tiên (Priority Queue).
