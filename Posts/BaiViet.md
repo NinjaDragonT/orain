@@ -1,4 +1,4 @@
-# 📚 Sổ Tay Thuật Toán
+# 📚 Thuật Toán
 
 Tổng hợp các thuật toán mà tôi đã tìm hiểu và cài đặt.
 
