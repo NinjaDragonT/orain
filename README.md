@@ -1,5 +1,6 @@
 # Sổ tay Thuật toán của tôi
-Xin chào! Đây là nơi tôi ghi chú lại các thuật toán và cấu trúc dữ liệu hay.
+Đây là nơi tôi chia sẻ các thuật toán phục vụ lập trình thi đấu
 
 ## Danh sách bài viết
-- [Thuật toán Dijkstra (Tìm đường đi ngắn nhất)](dijkstra.html)
+- [Thuật toán kiểm tra số nguyên tố](snt.html)
+
