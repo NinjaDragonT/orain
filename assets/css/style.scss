@@ -96,3 +96,25 @@
 .card-btn:hover {
   background: #0f5858;
 }
+
+/* Thu gọn chiều cao vùng màu xanh (Header) */
+.page-header {
+  padding: 1.5rem 2rem !important; /* Giảm khoảng trống trên và dưới */
+}
+
+/* Thu gọn khoảng cách giữa tiêu đề và slogan */
+.project-name {
+  margin-top: 0 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.project-tagline {
+  margin-bottom: 0.8rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* Thu gọn thanh Menu */
+.nav-menu {
+  margin-top: 10px !important;
+  padding: 6px 0 !important;
+}
