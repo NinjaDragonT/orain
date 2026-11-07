@@ -1,6 +1,7 @@
 ---
 ---
 <a href="{{ 'baiviet.html' | relative_url }}" class="back-btn">← Quay lại Danh sách bài viết</a>
+
 Code C++: 
 ```cpp
 bool prime(int num){
