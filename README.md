@@ -1,6 +1,5 @@
-# Sổ tay thuật toán
-Đây là nơi tôi chia sẻ các thuật toán cho việc lập trình thi đấu
+# Về tôi 
+Tôi tên là **Hồ Hoàng Đức** - **orain**, học sinh khoá **K30** của trường **THPT Chuyên Hùng Vương - Hồ Chí Minh**.  
+Tôi thích lập trình thi đấu, nhưng khả năng của tôi chưa đủ tốt và tôi vẫn đang cố gắng từng ngày. 
 
-## Danh sách bài viết
-- [Thuật toán kiểm tra số nguyên tố](snt.html)
-
+Chúc các bạn xem qua website của tôi vui vẻ. 
