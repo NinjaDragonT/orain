@@ -1,4 +1,4 @@
-<a href="baiviet.html" class="back-btn">← Quay lại </a>
+<a href="../BaiViet.html" class="back-btn">← Quay lại </a>
 
 Code C++: 
 ```cpp
