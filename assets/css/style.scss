@@ -1,6 +1,7 @@
 ---
 ---
 @import "{{ site.theme }}";
+
 /* Nền khung code */
 .highlight { 
   background-color: #1e1e1e !important; 
@@ -8,8 +9,28 @@
   border-radius: 8px; 
   overflow-x: auto; 
 }
-.highlight pre { background-color: transparent !important; margin: 0; border: none; }
-.highlight code { color: #d4d4d4; background-color: transparent !important; }
+
+/* Thêm font-size và line-height vào đây */
+.highlight pre { 
+  background-color: transparent !important; 
+  margin: 0; 
+  border: none; 
+  font-size: 1rem !important;    /* Tăng cỡ chữ khung code bự bằng chữ thường */
+  line-height: 1.6 !important;   /* Khoảng cách giữa các dòng code giãn ra cho dễ nhìn */
+}
+
+.highlight code { 
+  color: #d4d4d4; 
+  background-color: transparent !important; 
+  font-size: 1rem !important;    /* Đồng bộ cỡ chữ */
+  font-family: "Consolas", "Courier New", monospace; /* Font chữ code chuẩn */
+}
+
+/* Tùy chọn: Tăng cỡ chữ cho các đoạn code ngắn nằm trong văn bản (như basis[i], xor...) */
+p code, li code {
+  font-size: 0.95rem !important;
+  padding: 2px 6px;
+}
 
 /* Bảng màu VS Code Dark+ */
 /* Từ khóa (if, for, return, bool, true, false) */
