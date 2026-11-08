@@ -12,22 +12,33 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
   <style>
-  /* 1. Đổi font chữ cho toàn bộ code thành Consolas */
+  /* 1. Biến toàn bộ trang web thành Dark Mode */
+  body {
+    background-color: #0d1117 !important; /* Nền xám đen chuẩn GitHub */
+    color: #c9d1d9 !important; /* Chữ văn bản màu xám sáng dễ đọc */
+  }
+
+  /* 2. Ép màu trắng cho các tiêu đề (tránh bị dính màu xanh lá/đen của theme cũ) */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+
+  /* 3. Font Consolas cho mọi loại code */
   code, pre {
     font-family: Consolas, "Courier New", monospace !important;
   }
   
-  /* 2. Làm nổi bật inline code (như basis[60]) trên nền trắng */
+  /* 4. Chỉnh inline code (như basis[60]) to hơn, màu trung tính chuẩn Dark Mode */
   p code, li code, table code {
-    font-size: 1.1em !important; /* Tăng kích thước chữ cho dễ nhìn */
-    color: #c7254e !important; /* Chữ màu đỏ đô để nổi bật */
-    background-color: #f9f2f4 !important; /* Nền xám/hồng nhạt để phân biệt */
-    padding: 2px 6px !important; /* Mở rộng khoảng cách nền */
-    border-radius: 4px !important; /* Bo góc nền */
-    font-weight: bold !important; /* In đậm chữ */
+    font-size: 1.15em !important; /* Phóng to chữ lên 115% */
+    color: #e6edf3 !important; /* Chữ màu sáng */
+    background-color: #161b22 !important; /* Nền xám nhạt ôm lấy chữ */
+    padding: 3px 6px !important; 
+    border-radius: 5px !important;
+    border: 1px solid #30363d !important; /* Thêm đường viền mờ cho khối code sắc nét */
   }
   </style>
-
+  
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title | default: site.title }} | {{ site.description }}</title>
