@@ -11,48 +11,52 @@
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
- <style>
+  <style>
     /* --- 1. Cài đặt gốc cho toàn trang --- */
     body, html {
       background-color: #0d1117 !important; 
       color: #c9d1d9 !important; 
     }
   
-    /* --- 2. Sửa Card: Bỏ khung viền xấu, thêm bóng đổ 3D --- */
-    .card, article, section,
-    div[class*="card"], div[class*="item"], div[class*="box"], div[class*="col"], div[class*="grid"] {
-      background-color: #161b22 !important; /* Đưa nền về xám đen */
-      border: none !important; /* Xóa hẳn khung viền cứng */
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important; /* Đổ bóng nổi khối 3D */
-      color: #c9d1d9 !important; /* Cứu các chữ bị chìm vào nền trắng */
+    /* --- 2. XÓA SẠCH KHUNG VIỀN BAO NGOÀI TẤT CẢ --- */
+    /* Nhắm vào các thẻ bọc (container/wrapper) để xóa cái viền to bao quanh 3 card */
+    div, section, article, main, .container, .wrapper, .grid, .row {
+      border: none !important; 
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  
+    /* --- 3. Chỉnh Card: Nền xám đen, bo góc mềm mại --- */
+    .card, div[class*="card"], div[class*="item"], div[class*="box"] {
+      background-color: #161b22 !important; 
       border-radius: 8px !important;
+      border: 1px solid #30363d !important; /* Trả lại một viền xám cực mỏng của GitHub xịn để tách biệt card, nếu bạn không thích có thể đổi thành "none !important" */
+      padding: 20px !important; /* Tạo khoảng trống cho chữ thở */
     }
   
-    /* --- 3. Làm nổi bật các Tag ghi chú (Số học, Đồ thị...) --- */
-    /* Bắt các thẻ span nằm trong card hoặc các class tag thông dụng */
-    .card span, .tag, .badge, .category {
-      background-color: #1f6feb !important; /* Nền xanh dương tươi sáng */
-      color: #ffffff !important; /* Chữ trắng cực nét */
-      padding: 3px 10px !important;
-      border-radius: 20px !important; /* Bo tròn kiểu viên thuốc (pill) */
-      font-weight: 600 !important;
-      border: none !important;
+    /* --- 4. CHỮ TÓM TẮT THUẬT TOÁN SÁNG VÀ RÕ NÉT --- */
+    /* Ép tất cả các đoạn văn (thẻ p) bên trong card phải là màu xám sáng, tắt hiệu ứng mờ */
+    .card p, div[class*="card"] p, .summary, .description {
+      color: #c9d1d9 !important; /* Đổi thành màu xám sáng */
+      font-size: 1.05em !important; /* Cho chữ to lên một chút xíu cho dễ đọc */
+      opacity: 1 !important; /* Tắt hiệu ứng làm mờ chữ của theme cũ */
+      font-weight: 400 !important;
     }
   
-    /* --- 4. Tinh chỉnh basis[60] nhỏ gọn, vừa vặn với dòng chữ --- */
+    /* --- 5. Tinh chỉnh basis[60] nhỏ gọn --- */
     code, pre {
       font-family: Consolas, "Courier New", monospace !important;
     }
     p code, li code, table code {
-      font-size: 0.9em !important; /* Thu nhỏ chữ xuống 90% để bằng đúng text thường */
+      font-size: 0.9em !important; 
       color: #e6edf3 !important;
-      background-color: rgba(110, 118, 129, 0.4) !important; /* Đổi sang nền xám trong suốt, nhẹ nhàng hơn */
-      padding: 2px 5px !important; /* Ép mút đệm mỏng lại */
+      background-color: rgba(110, 118, 129, 0.4) !important; 
+      padding: 2px 5px !important; 
       border-radius: 6px !important;
-      border: none !important; /* Bỏ luôn viền để chữ code trông thanh thoát */
+      border: none !important; 
     }
   
-    /* --- 5. Giữ nguyên Nút bấm & Tiêu đề --- */
+    /* --- 6. Nút bấm & Tiêu đề --- */
     .btn, button, a.btn {
       background-color: #238636 !important; 
       color: #ffffff !important;
@@ -60,6 +64,15 @@
     }
     h1, h2, h3, h4, h5, h6 {
       color: #ffffff !important; 
+    }
+    
+    /* --- 7. Các tag ghi chú (Số học, Đồ thị) --- */
+    .badge, .tag, span[class*="badge"], span[class*="tag"] {
+      background-color: #0d1117 !important; /* Nền đen tệp với trang */
+      color: #58a6ff !important; /* Chữ xanh dương sáng kiểu GitHub */
+      border: 1px solid #30363d !important; /* Viền mỏng tinh tế */
+      padding: 2px 10px !important;
+      border-radius: 20px !important;
     }
   </style>
   
