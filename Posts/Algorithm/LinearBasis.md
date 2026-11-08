@@ -6,7 +6,7 @@ Sử dụng trong các bài toán về tập hợp con và các tính chất c�
 Thuật toán sẽ nén một mảng khổng lồ có $N$ phần tử (Có thể tạo ra $2^N$ tập con) thành tối đa $\log(N)$ phần tử mà vẫn bảo toàn tính chất tạo giá trị.
 
 # Thuật toán hoạt động ra sao?
-Gọi một mảng `basis[60]` trong đó `basis[i]` lưu trữ một số có bit cao nhất là bit thứ $i$
+Gọi một mảng `basis[60]` trong đó `basis[i]` lưu trữ một số `x` có bit cao nhất là bit thứ $i$.
 
 Khi muốn thêm một số `x` vào mảng:  
 1. Duyệt bit $i$ từ 60 về 0.  
