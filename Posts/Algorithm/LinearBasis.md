@@ -1,7 +1,7 @@
 <a href="../BaiViet.html" class="back-btn">← Quay lại </a>
 
 # Ứng dụng của Linear Basis
-Sử dụng trong các bài toán về tập hợp con và các tính chất của phép XOR.
+Sử dụng trong các bài toán về tập hợp con và các tính chất của phép `xor`.
 
 Thuật toán sẽ nén một mảng khổng lồ có $N$ phần tử (Có thể tạo ra $2^N$ tập con) thành tối đa $\log(N)$ phần tử mà vẫn bảo toàn tính chất tạo giá trị.
 
@@ -14,3 +14,22 @@ Khi muốn thêm một số `x` vào mảng:
  * Nếu `basis[i]` bằng 0: Gán `basis[i] = x` và kết thúc.  
  * Nếu `basis[i]` khác 0: Ta triệt tiêu bit thứ $i$ của `x` bằng cách gán `x = x ^ basis[i]`.  
 3. Khi `x` giảm về 0: Cho biết `x` không còn đóng góp một giá trị mới nào, bản thân `x` đã có thể được tạo ra bằng cách `xor` các phần tử trong `basis`.
+
+# Code mẫu: 
+
+```cpp
+void linearBasis(){
+    for(int i = 1; i <= n; i++){
+        for(int j = 60; j >= 0; j--){
+            if(a[i] & (1LL << j)){
+                if(basis[j] == 0){
+                    basis[j] = a[i]; 
+                    sz++; 
+                    break;  
+                }
+                else a[i] = a[i] ^ basis[j]; 
+            }
+        }
+    }
+}
+```
