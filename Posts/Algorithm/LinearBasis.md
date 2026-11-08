@@ -1,3 +1,5 @@
+<a href="../BaiViet.html" class="back-btn">← Quay lại </a>
+
 # **Ứng dụng của Linear Basis**
 Sử dụng trong các bài toán về tập hợp con và các tính chất của phép XOR.
 
