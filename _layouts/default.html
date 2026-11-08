@@ -113,13 +113,14 @@
       
       <!-- 2. Slogan / Mô tả -->
       <h2 class="project-tagline">Nơi lưu trữ niềm đam mê lập trình thi đấu</h2>
-      
-      <!-- 3. Thanh Menu nằm bên dưới -->
+
+      <!-- 3. Thanh Menu nằm bên dưới (Tự động sáng khi chọn trang) -->
       <div class="nav-menu">
-        <a href="{{ '/' | relative_url }}">Giới thiệu</a>
-        <a href="{{ '/Posts/BaiViet.html' | relative_url }}">Bài viết</a>
-        <a href="{{ '/LienHe.html' | relative_url }}">Liên hệ</a>
+        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Giới thiệu</a>
+        <a href="{{ '/Posts/BaiViet.html' | relative_url }}" class="{% if page.url contains 'BaiViet' or page.url contains 'Posts' or page.url contains 'post' %}active{% endif %}">Bài viết</a>
+        <a href="{{ '/LienHe.html' | relative_url }}" class="{% if page.url contains 'LienHe' %}active{% endif %}">Liên hệ</a>
       </div>
+    
     </section>
 
     <section class="main-content">
