@@ -10,6 +10,24 @@
     };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+  /* 1. Đổi font chữ cho toàn bộ code thành Consolas */
+  code, pre {
+    font-family: Consolas, "Courier New", monospace !important;
+  }
+  
+  /* 2. Làm nổi bật inline code (như basis[60]) trên nền trắng */
+  p code, li code, table code {
+    font-size: 1.1em !important; /* Tăng kích thước chữ cho dễ nhìn */
+    color: #c7254e !important; /* Chữ màu đỏ đô để nổi bật */
+    background-color: #f9f2f4 !important; /* Nền xám/hồng nhạt để phân biệt */
+    padding: 2px 6px !important; /* Mở rộng khoảng cách nền */
+    border-radius: 4px !important; /* Bo góc nền */
+    font-weight: bold !important; /* In đậm chữ */
+  }
+  </style>
+
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title | default: site.title }} | {{ site.description }}</title>
