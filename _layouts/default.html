@@ -12,46 +12,53 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
  <style>
-    /* --- Cài đặt gốc cho toàn trang --- */
+    /* --- 1. Cài đặt gốc cho toàn trang --- */
     body, html {
       background-color: #0d1117 !important; 
       color: #c9d1d9 !important; 
     }
   
-    /* --- Sửa lỗi Card màu trắng --- */
-    /* Nhắm mục tiêu vào tất cả các khung, thẻ div, và bảng có thể bị nền trắng */
-    .card, div, section, article {
-      background-color: #161b22 !important; /* Đổi nền card thành xám đậm */
-      border: 1px solid #30363d !important; /* Viền mờ cho card */
-      color: #c9d1d9 !important; /* Đảm bảo chữ trong card không bị đen */
+    /* --- 2. Sửa Card: Bỏ khung viền xấu, thêm bóng đổ 3D --- */
+    .card, article, section {
+      background-color: #161b22 !important; 
+      border: none !important; /* Xóa hẳn khung viền cứng */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important; /* Thêm bóng đổ nhẹ giúp card nổi bần bật trên nền đen */
+      color: #c9d1d9 !important; 
+      border-radius: 8px !important;
     }
   
-    /* --- Sửa màu nút bấm và các tag phân loại (Số học, Đồ thị) --- */
-    a, button, .btn {
-      background-color: #238636 !important; /* Màu xanh lá đặc trưng nút bấm GitHub */
-      color: #ffffff !important;
+    /* --- 3. Làm nổi bật các Tag ghi chú (Số học, Đồ thị...) --- */
+    /* Bắt các thẻ span nằm trong card hoặc các class tag thông dụng */
+    .card span, .tag, .badge, .category {
+      background-color: #1f6feb !important; /* Nền xanh dương tươi sáng */
+      color: #ffffff !important; /* Chữ trắng cực nét */
+      padding: 3px 10px !important;
+      border-radius: 20px !important; /* Bo tròn kiểu viên thuốc (pill) */
+      font-weight: 600 !important;
       border: none !important;
     }
-    a:hover {
-      background-color: #2ea043 !important; /* Sáng lên khi di chuột */
-    }
   
-    /* --- Sửa màu các tiêu đề bị lỗi xanh lá cũ --- */
-    h1, h2, h3, h4, h5, h6 {
-      color: #ffffff !important; 
-    }
-  
-    /* --- Giữ nguyên cấu hình Code --- */
+    /* --- 4. Tinh chỉnh basis[60] nhỏ gọn, vừa vặn với dòng chữ --- */
     code, pre {
       font-family: Consolas, "Courier New", monospace !important;
     }
-    p code, li code, table code, div code {
-      font-size: 1.15em !important;
+    p code, li code, table code {
+      font-size: 0.9em !important; /* Thu nhỏ chữ xuống 90% để bằng đúng text thường */
       color: #e6edf3 !important;
-      background-color: #21262d !important; /* Nền xám nhạt cho chữ code */
-      padding: 3px 6px !important; 
-      border-radius: 5px !important;
-      border: 1px solid #30363d !important;
+      background-color: rgba(110, 118, 129, 0.4) !important; /* Đổi sang nền xám trong suốt, nhẹ nhàng hơn */
+      padding: 2px 5px !important; /* Ép mút đệm mỏng lại */
+      border-radius: 6px !important;
+      border: none !important; /* Bỏ luôn viền để chữ code trông thanh thoát */
+    }
+  
+    /* --- 5. Giữ nguyên Nút bấm & Tiêu đề --- */
+    .btn, button, a.btn {
+      background-color: #238636 !important; 
+      color: #ffffff !important;
+      border: none !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff !important; 
     }
   </style>
   
