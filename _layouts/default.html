@@ -19,11 +19,12 @@
     }
   
     /* --- 2. Sửa Card: Bỏ khung viền xấu, thêm bóng đổ 3D --- */
-    .card, article, section {
-      background-color: #161b22 !important; 
+    .card, article, section,
+    div[class*="card"], div[class*="item"], div[class*="box"], div[class*="col"], div[class*="grid"] {
+      background-color: #161b22 !important; /* Đưa nền về xám đen */
       border: none !important; /* Xóa hẳn khung viền cứng */
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important; /* Thêm bóng đổ nhẹ giúp card nổi bần bật trên nền đen */
-      color: #c9d1d9 !important; 
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important; /* Đổ bóng nổi khối 3D */
+      color: #c9d1d9 !important; /* Cứu các chữ bị chìm vào nền trắng */
       border-radius: 8px !important;
     }
   
