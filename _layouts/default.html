@@ -84,30 +84,41 @@
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
-      /* CSS cho thanh Menu nằm ở dưới */
+    /* CSS cho thanh Menu nằm ở dưới */
+    /* --- Thanh Menu căn giữa dùng Flexbox --- */
       .nav-menu { 
         margin-top: 25px;
-        padding: 12px 0; 
-        text-align: center; 
+        padding: 10px 0; 
+        display: flex;                  /* Dùng flexbox giúp căn chỉnh pixel-perfect */
+        justify-content: center;        /* Căn toàn bộ menu ra chính giữa */
+        align-items: center;
+        gap: 12px;                      /* Khoảng cách ĐỀU NHAU 100% giữa các nút */
         background: rgba(0, 0, 0, 0.15);
         border-radius: 6px;
       }
+    
+      /* --- Định dạng từng nút bấm bằng nhau --- */
       .nav-menu a { 
         color: white; 
         text-decoration: none; 
-        padding: 8px 18px; 
+        width: 110px;                   /* Ép cả 3 nút rộng ĐÚNG 110px bằng nhau */
+        padding: 8px 0;                 /* Chiều cao chuẩn đều cho cả 3 nút */
+        text-align: center;             /* Căn chữ nằm chính giữa từng khung */
         font-weight: bold; 
-        margin: 0 4px; 
-        border-radius: 4px;
-        transition: background 0.2s;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        display: inline-block;
       }
-      /* Thêm dòng này để làm sáng nút đang chọn */
+    
+      /* --- Nút đang active (đang ở trang đó) --- */
       .nav-menu a.active { 
-        background: rgba(255, 255, 255, 0.35) !important; 
-        box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.25) !important; 
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
       }
-      .nav-menu a:hover { 
-        background: rgba(255, 255, 255, 0.25); 
+    
+      /* --- Hiệu ứng rê chuột --- */
+      .nav-menu a:hover:not(.active) { 
+        background: rgba(255, 255, 255, 0.12); 
       }
     </style>
   </head>
