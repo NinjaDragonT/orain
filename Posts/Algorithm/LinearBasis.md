@@ -20,14 +20,15 @@ Khi muốn thêm một số `x` vào mảng:
 ```cpp
 void linearBasis(){
     for(int i = 1; i <= n; i++){
+        long long x = a[i]; 
         for(int j = 60; j >= 0; j--){
-            if(a[i] & (1LL << j)){
+            if(x & (1LL << j)){
                 if(basis[j] == 0){
-                    basis[j] = a[i]; 
+                    basis[j] = x; 
                     sz++; 
                     break;  
                 }
-                else a[i] = a[i] ^ basis[j]; 
+                else x = x ^ basis[j]; 
             }
         }
     }
